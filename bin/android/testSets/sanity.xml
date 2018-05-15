@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="JetSanityTest">
+
+	<listeners>
+		<listener class-name="tgfm.BrowserListener"/>
+	</listeners>
+
+  <test name="chekout">  
+  	<parameter name="browserName" value="android" />
+  	<parameter name="email" value="cash.credt.2@wildtest.com" />
+  	<parameter name="password" value="jet12345" />
+  	<parameter name="newUserEmail" value="wd.7@wildtest.com" />
+  	<parameter name="newUserPassword" value="Jet12345" />  	
+  	<parameter name="newUserZip" value="64030" />
+  	<parameter name="searchFor" value="ball" />  	
+  	<parameter name="SKU" value="64dc7716f22446c294e49348272f0651" />  	
+    <classes>
+    	<class name="android.testCase.NewUser" >
+    	<methods>
+    		<include name="newTest" />
+    	</methods>
+    	</class>
+    </classes>
+    
+  </test>
+  
+</suite>  	
